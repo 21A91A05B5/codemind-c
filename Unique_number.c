@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,d,i;
-    static int arr[10];
+    int n,r,i;
+    static int arr[100];
     scanf("%d",&n);
     while(n>0)
     {
-        d=n%10;
-        arr[d]++;
+        r=n%10;
         n=n/10;
+        arr[r]++;
     }
     for(i=0;i<10;i++)
     {
