@@ -9,7 +9,7 @@ int main()
     }
     for(i=n-1;i>=0;i--)
     {
-        if(arr[i]%2!=0)
+        if(arr[i]%2==1)
         {
             printf("%d",i);
             break;
