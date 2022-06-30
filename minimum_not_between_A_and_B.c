@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,arr[100],a,b,min=100,c=0;
+    int n,i,arr[100],c=0,a,b,min=100;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -10,7 +10,7 @@ int main()
     scanf("%d%d",&a,&b);
     for(i=0;i<n;i++)
     {
-        if(arr[i]<a || arr[i]>b)
+        if(arr[i]<a ||arr[i]>b)
         {
             if(arr[i]<min)
             {
