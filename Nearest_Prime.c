@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+    int n,arr[100],i,k,c=0,j,d,e,pp,np;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=arr[i]-1;j>=1;j--)
+        {
+            c=0;
+            for(k=1;k<=j;k++)
+            {
+                if(j%k==0)
+                {
+                    c++;
+                }
+            }
+            if(c==2)
+            {
+                pp=j;
+                d=arr[i]-pp;
+                break;
+            }
+        }
+    
+        for(j=arr[i];j<=arr[i]+100;j++)
+        {
+            c=0;
+            for(k=1;k<=j;k++)
+            {
+                if(j%k==0)
+                {
+                    c++;
+                }
+            }
+            if(c==2)
+            {
+                np=j;
+                e=np-arr[i];
+                break;
+            }
+        }
+        if(d<=e)
+        {
+            printf("%d
+",pp);
+        }
+        else
+        {
+            printf("%d
+",np);
+        }
+    }
+}
