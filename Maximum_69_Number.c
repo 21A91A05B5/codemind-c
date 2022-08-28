@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,d,a[100],i,j;
+    int n,r,a[100],i,j;
     scanf("%d",&n);
     i=0;
     while(n!=0)
     {
-        d=n%10;
+        r=n%10;
         n=n/10;
-        a[i]=d;
+        a[i]=r;
         i++;
     }
     for(j=i-1;j>=0;j--)
